@@ -68,6 +68,10 @@ http://localhost:8787/today.json
 The workflow runs at `16:10 UTC`, just after midnight in `Asia/Taipei`, and
 also supports manual runs from the GitHub Actions tab.
 
+Generated JSON changes are committed by the workflow with
+`stefanzweifel/git-auto-commit-action`, so daily data updates do not need to be
+committed locally.
+
 It needs the default GitHub token write permission. The repo already declares:
 
 ```yaml

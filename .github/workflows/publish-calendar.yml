@@ -44,14 +44,7 @@ jobs:
           fi
 
       - name: Commit updated JSON
-        run: |
-          if git diff --quiet -- data/today.json data/days; then
-            echo "Calendar JSON is already current."
-            exit 0
-          fi
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/today.json data/days
-          git commit -m "Update calendar JSON"
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update calendar JSON"
+          file_pattern: "data/today.json data/days/*.json"
