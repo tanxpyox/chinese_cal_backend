@@ -1,12 +1,109 @@
 {
-  "schemaVersion": "1.0.0",
-  "generatedAt": "2026-06-30T20:28:15.644Z",
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-06-30T20:37:28.320Z",
   "timeZone": "Asia/Taipei",
   "date": "2026-07-01",
   "source": {
     "lunarJavascript": "1.7.7",
     "openccJs": "1.3.2",
     "conversion": "OpenCC cn -> tw"
+  },
+  "calendarCard": {
+    "title": "農曆五月十七",
+    "lunarDate": {
+      "month": "五月",
+      "day": "十七",
+      "text": "五月十七"
+    },
+    "sideColumn": {
+      "year": "丙午馬年",
+      "month": "甲午月",
+      "day": "丙子日",
+      "weekday": "星期三"
+    },
+    "fiveElements": {
+      "label": "五行",
+      "value": "澗下水"
+    },
+    "clashAndSha": {
+      "label": "沖煞",
+      "text": "沖(庚午)馬 煞南",
+      "clash": "(庚午)馬",
+      "sha": "南"
+    },
+    "pengZu": {
+      "label": "彭祖",
+      "heavenlyStem": "丙不修灶必見災殃",
+      "earthlyBranch": "子不問卜自惹禍殃",
+      "lines": [
+        "丙不修灶必見災殃",
+        "子不問卜自惹禍殃"
+      ]
+    },
+    "directionGods": [
+      {
+        "label": "喜神",
+        "palace": "坤",
+        "direction": "西南"
+      },
+      {
+        "label": "福神",
+        "palace": "乾",
+        "direction": "西北"
+      },
+      {
+        "label": "財神",
+        "palace": "坤",
+        "direction": "西南"
+      }
+    ],
+    "activities": {
+      "auspicious": {
+        "label": "宜",
+        "items": [
+          "祭祀",
+          "沐浴",
+          "破屋",
+          "壞垣",
+          "餘事勿取"
+        ]
+      },
+      "inauspicious": {
+        "label": "忌",
+        "items": [
+          "入宅",
+          "嫁娶",
+          "移徙"
+        ]
+      }
+    },
+    "deities": {
+      "auspicious": {
+        "label": "吉神",
+        "items": [
+          "月德",
+          "六儀",
+          "解神",
+          "金匱",
+          "鳴吠對"
+        ]
+      },
+      "inauspicious": {
+        "label": "凶神",
+        "items": [
+          "月破",
+          "大耗",
+          "災煞",
+          "天火",
+          "厭對",
+          "招搖",
+          "四忌",
+          "七鳥",
+          "五虛",
+          "觸水龍"
+        ]
+      }
+    }
   },
   "gregorian": {
     "year": 2026,
@@ -169,7 +266,30 @@
       "嫁娶",
       "移徙"
     ],
+    "auspiciousDeities": [
+      "月德",
+      "六儀",
+      "解神",
+      "金匱",
+      "鳴吠對"
+    ],
+    "inauspiciousDeities": [
+      "月破",
+      "大耗",
+      "災煞",
+      "天火",
+      "厭對",
+      "招搖",
+      "四忌",
+      "七鳥",
+      "五虛",
+      "觸水龍"
+    ],
     "clash": "午",
+    "clashHeavenlyStem": "庚",
+    "clashEarthlyBranch": "午",
+    "clashHiddenHeavenlyStem": "辛",
+    "clashZodiac": "馬",
     "clashDescription": "(庚午)馬",
     "sha": "南",
     "pengZu": {
@@ -183,11 +303,40 @@
     }
   },
   "directions": {
-    "joy": "坤",
-    "fortune": "乾",
-    "wealth": "坤",
-    "yangNoble": "兌",
-    "yinNoble": "乾"
+    "joy": {
+      "label": "喜神",
+      "palace": "坤",
+      "direction": "西南"
+    },
+    "fortune": {
+      "label": "福神",
+      "palace": "乾",
+      "direction": "西北"
+    },
+    "wealth": {
+      "label": "財神",
+      "palace": "坤",
+      "direction": "西南"
+    },
+    "yangNoble": {
+      "label": "陽貴神",
+      "palace": "兌",
+      "direction": "正西"
+    },
+    "yinNoble": {
+      "label": "陰貴神",
+      "palace": "乾",
+      "direction": "西北"
+    },
+    "taiSui": {
+      "label": "太歲",
+      "palace": "離",
+      "direction": "正南"
+    },
+    "fetalGod": {
+      "label": "胎神",
+      "position": "廚灶碓 外西南"
+    }
   },
   "stars": {
     "nineStar": {

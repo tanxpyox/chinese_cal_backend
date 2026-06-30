@@ -12,7 +12,7 @@ const require = createRequire(import.meta.url);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
 
-const SCHEMA_VERSION = "1.0.0";
+const SCHEMA_VERSION = "1.1.0";
 const DEFAULT_TIME_ZONE = process.env.CALENDAR_TZ || "Asia/Taipei";
 const SOLAR_TERM_KEY_NAMES = {
   LI_CHUN: "立春",
@@ -211,6 +211,81 @@ function serializeTimes(lunar) {
   );
 }
 
+function serializeDirection(label, lunar, positionMethod, descriptionMethod) {
+  return toTraditional({
+    label,
+    palace: call(lunar, positionMethod),
+    direction: call(lunar, descriptionMethod)
+  });
+}
+
+function serializeCalendarCard(solar, lunar) {
+  const weekday = call(solar, "getWeekInChinese");
+  const lunarMonth = `${call(lunar, "getMonthInChinese")}月`;
+  const lunarDay = call(lunar, "getDayInChinese");
+  const yearGanZhi = call(lunar, "getYearInGanZhi");
+  const monthGanZhi = call(lunar, "getMonthInGanZhi");
+  const dayGanZhi = call(lunar, "getDayInGanZhi");
+  const dayChongDesc = call(lunar, "getDayChongDesc");
+  const daySha = call(lunar, "getDaySha");
+
+  return toTraditional({
+    title: `農曆${lunarMonth}${lunarDay}`,
+    lunarDate: {
+      month: lunarMonth,
+      day: lunarDay,
+      text: `${lunarMonth}${lunarDay}`
+    },
+    sideColumn: {
+      year: `${yearGanZhi}${call(lunar, "getYearShengXiao")}年`,
+      month: `${monthGanZhi}月`,
+      day: `${dayGanZhi}日`,
+      weekday: `星期${weekday}`
+    },
+    fiveElements: {
+      label: "五行",
+      value: call(lunar, "getDayNaYin")
+    },
+    clashAndSha: {
+      label: "沖煞",
+      text: `沖${dayChongDesc} 煞${daySha}`,
+      clash: dayChongDesc,
+      sha: daySha
+    },
+    pengZu: {
+      label: "彭祖",
+      heavenlyStem: call(lunar, "getPengZuGan"),
+      earthlyBranch: call(lunar, "getPengZuZhi"),
+      lines: [call(lunar, "getPengZuGan"), call(lunar, "getPengZuZhi")].filter(Boolean)
+    },
+    directionGods: [
+      serializeDirection("喜神", lunar, "getDayPositionXi", "getDayPositionXiDesc"),
+      serializeDirection("福神", lunar, "getDayPositionFu", "getDayPositionFuDesc"),
+      serializeDirection("財神", lunar, "getDayPositionCai", "getDayPositionCaiDesc")
+    ],
+    activities: {
+      auspicious: {
+        label: "宜",
+        items: stringArray(call(lunar, "getDayYi", []))
+      },
+      inauspicious: {
+        label: "忌",
+        items: stringArray(call(lunar, "getDayJi", []))
+      }
+    },
+    deities: {
+      auspicious: {
+        label: "吉神",
+        items: stringArray(call(lunar, "getDayJiShen", []))
+      },
+      inauspicious: {
+        label: "凶神",
+        items: stringArray(call(lunar, "getDayXiongSha", []))
+      }
+    }
+  });
+}
+
 function serializeCalendarDay({ year, month, day, date, timeZone }) {
   const solar = Solar.fromYmd(year, month, day);
   const lunar = solar.getLunar();
@@ -225,6 +300,7 @@ function serializeCalendarDay({ year, month, day, date, timeZone }) {
       openccJs: getPackageVersion("opencc-js"),
       conversion: "OpenCC cn -> tw"
     },
+    calendarCard: serializeCalendarCard(solar, lunar),
     gregorian: {
       year: call(solar, "getYear"),
       month: call(solar, "getMonth"),
@@ -275,7 +351,13 @@ function serializeCalendarDay({ year, month, day, date, timeZone }) {
     almanac: {
       auspicious: stringArray(call(lunar, "getDayYi", [])),
       inauspicious: stringArray(call(lunar, "getDayJi", [])),
+      auspiciousDeities: stringArray(call(lunar, "getDayJiShen", [])),
+      inauspiciousDeities: stringArray(call(lunar, "getDayXiongSha", [])),
       clash: call(lunar, "getDayChong"),
+      clashHeavenlyStem: call(lunar, "getDayChongGan"),
+      clashEarthlyBranch: call(lunar, "getDayChong"),
+      clashHiddenHeavenlyStem: call(lunar, "getDayChongGanTie"),
+      clashZodiac: call(lunar, "getDayChongShengXiao"),
       clashDescription: call(lunar, "getDayChongDesc"),
       sha: call(lunar, "getDaySha"),
       pengZu: {
@@ -289,11 +371,16 @@ function serializeCalendarDay({ year, month, day, date, timeZone }) {
       }
     },
     directions: {
-      joy: call(lunar, "getDayPositionXi"),
-      fortune: call(lunar, "getDayPositionFu"),
-      wealth: call(lunar, "getDayPositionCai"),
-      yangNoble: call(lunar, "getDayPositionYangGui"),
-      yinNoble: call(lunar, "getDayPositionYinGui")
+      joy: serializeDirection("喜神", lunar, "getDayPositionXi", "getDayPositionXiDesc"),
+      fortune: serializeDirection("福神", lunar, "getDayPositionFu", "getDayPositionFuDesc"),
+      wealth: serializeDirection("財神", lunar, "getDayPositionCai", "getDayPositionCaiDesc"),
+      yangNoble: serializeDirection("陽貴神", lunar, "getDayPositionYangGui", "getDayPositionYangGuiDesc"),
+      yinNoble: serializeDirection("陰貴神", lunar, "getDayPositionYinGui", "getDayPositionYinGuiDesc"),
+      taiSui: serializeDirection("太歲", lunar, "getDayPositionTaiSui", "getDayPositionTaiSuiDesc"),
+      fetalGod: {
+        label: "胎神",
+        position: call(lunar, "getDayPositionTai")
+      }
     },
     stars: {
       nineStar: serializeNineStar(call(lunar, "getDayNineStar")),

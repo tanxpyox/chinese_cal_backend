@@ -85,6 +85,9 @@ Settings -> Actions -> General -> Workflow permissions -> Read and write permiss
 
 The generated document includes:
 
+- `calendarCard`, a ready-to-render block matching a traditional day-card UI:
+  lunar headline, year/month/day stems and branches, weekday, five elements,
+  clash and sha, Peng Zu, 喜神/福神/財神 directions, 宜/忌, 吉神, and 凶神.
 - Gregorian date, weekday, constellation, and solar festivals.
 - Lunar date, leap-month flag, lunar festivals, and full lunar text.
 - Solar term for the day plus the year's solar-term table.
