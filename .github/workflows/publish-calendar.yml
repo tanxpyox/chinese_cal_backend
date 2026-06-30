@@ -43,6 +43,13 @@ jobs:
             pnpm run generate:today
           fi
 
+      - name: Upload today JSON artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: today-json
+          path: data/today.json
+          if-no-files-found: error
+
       - name: Commit updated JSON
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
