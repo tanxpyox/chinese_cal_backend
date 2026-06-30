@@ -1,0 +1,21 @@
+{
+  "name": "traditional-chinese-day-calendar-json",
+  "version": "1.0.0",
+  "description": "Daily static JSON for a traditional Chinese day calendar.",
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "private": false,
+  "scripts": {
+    "generate": "node scripts/generate-day.mjs",
+    "generate:today": "node scripts/generate-day.mjs --out data/today.json --date-out-dir data/days",
+    "serve": "node scripts/serve-data.mjs",
+    "check": "node scripts/generate-day.mjs --date 2026-06-30 --out work/check.json"
+  },
+  "dependencies": {
+    "lunar-javascript": "^1.7.3",
+    "opencc-js": "^1.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

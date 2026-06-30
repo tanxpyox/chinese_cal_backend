@@ -1,0 +1,57 @@
+name: Publish daily calendar JSON
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Calendar date to generate, in YYYY-MM-DD. Leave blank for today in CALENDAR_TZ."
+        required: false
+        type: string
+  schedule:
+    # Runs just after midnight in Asia/Taipei.
+    - cron: "10 16 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      CALENDAR_TZ: Asia/Taipei
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: pnpm
+
+      - name: Enable pnpm
+        run: corepack enable
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate calendar JSON
+        run: |
+          if [ -n "${{ inputs.date }}" ]; then
+            pnpm run generate -- --date "${{ inputs.date }}" --out data/today.json --date-out-dir data/days
+          else
+            pnpm run generate:today
+          fi
+
+      - name: Commit updated JSON
+        run: |
+          if git diff --quiet -- data/today.json data/days; then
+            echo "Calendar JSON is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/today.json data/days
+          git commit -m "Update calendar JSON"
+          git push

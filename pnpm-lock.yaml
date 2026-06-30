@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      lunar-javascript:
+        specifier: ^1.7.3
+        version: 1.7.7
+      opencc-js:
+        specifier: ^1.0.5
+        version: 1.3.2
+
+packages:
+
+  lunar-javascript@1.7.7:
+    resolution: {integrity: sha512-u/KYiwPIBo/0bT+WWfU7qO1d+aqeB90Tuy4ErXenr2Gam0QcWeezUvtiOIyXR7HbVnW2I1DKfU0NBvzMZhbVQw==}
+
+  opencc-js@1.3.2:
+    resolution: {integrity: sha512-lO4Kq8J4TcPTa8qHcx5qazQCn+NM68kNwLJOQ58DG9MV8v25XJxByMB74zDGmr3LjJMGqDdrvQfoCi3FO0SC2A==}
+
+snapshots:
+
+  lunar-javascript@1.7.7: {}
+
+  opencc-js@1.3.2: {}
