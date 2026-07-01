@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.1.0",
-  "generatedAt": "2026-07-01T18:13:11.946Z",
+  "schemaVersion": "1.2.0",
+  "generatedAt": "2026-07-01T19:02:45.810Z",
   "timeZone": "Asia/Taipei",
   "date": "2026-07-03",
   "source": {
@@ -300,6 +300,11 @@
     "clashZodiac": "猴",
     "clashDescription": "(壬申)猴",
     "sha": "北",
+    "threeFu": null,
+    "jianChuTwelveOfficer": {
+      "label": "建除十二神",
+      "name": "成"
+    },
     "pengZu": {
       "heavenlyStem": "戊不受田田主不祥",
       "earthlyBranch": "寅不祭祀神鬼不嘗"

@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.1.0",
-  "generatedAt": "2026-06-30T20:50:14.862Z",
+  "schemaVersion": "1.2.0",
+  "generatedAt": "2026-07-01T19:02:45.374Z",
   "timeZone": "Asia/Taipei",
   "date": "2026-07-01",
   "source": {
@@ -292,6 +292,11 @@
     "clashZodiac": "馬",
     "clashDescription": "(庚午)馬",
     "sha": "南",
+    "threeFu": null,
+    "jianChuTwelveOfficer": {
+      "label": "建除十二神",
+      "name": "破"
+    },
     "pengZu": {
       "heavenlyStem": "丙不修灶必見災殃",
       "earthlyBranch": "子不問卜自惹禍殃"

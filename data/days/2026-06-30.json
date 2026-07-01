@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.1.0",
-  "generatedAt": "2026-07-01T01:52:22.315Z",
+  "schemaVersion": "1.2.0",
+  "generatedAt": "2026-07-01T19:02:45.155Z",
   "timeZone": "Asia/Taipei",
   "date": "2026-06-30",
   "source": {
@@ -306,6 +306,11 @@
     "clashZodiac": "蛇",
     "clashDescription": "(己巳)蛇",
     "sha": "西",
+    "threeFu": null,
+    "jianChuTwelveOfficer": {
+      "label": "建除十二神",
+      "name": "執"
+    },
     "pengZu": {
       "heavenlyStem": "乙不栽植千株不長",
       "earthlyBranch": "亥不嫁娶不利新郎"

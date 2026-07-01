@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.1.0",
-  "generatedAt": "2026-07-01T01:52:22.325Z",
+  "schemaVersion": "1.2.0",
+  "generatedAt": "2026-07-01T19:02:45.584Z",
   "timeZone": "Asia/Taipei",
   "date": "2026-07-02",
   "source": {
@@ -296,6 +296,11 @@
     "clashZodiac": "羊",
     "clashDescription": "(辛未)羊",
     "sha": "東",
+    "threeFu": null,
+    "jianChuTwelveOfficer": {
+      "label": "建除十二神",
+      "name": "危"
+    },
     "pengZu": {
       "heavenlyStem": "丁不剃頭頭必生瘡",
       "earthlyBranch": "醜不冠帶主不還鄉"

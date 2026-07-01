@@ -98,6 +98,6 @@ The generated document includes:
 - Lunar date, leap-month flag, lunar festivals, and full lunar text.
 - Solar term for the day plus the year's solar-term table.
 - Heavenly stems and earthly branches for year, month, day, and exact variants when provided by the library.
-- Zodiac, Na Yin, almanac `宜` and `忌`, clash, sha, Peng Zu, deities, and auspicious directions.
+- Zodiac, Na Yin, almanac `宜` and `忌`, clash, sha, 三伏, 建除十二神, Peng Zu, deities, and auspicious directions.
 - Nine-star and twenty-eight-mansion information.
 - Moon phase, seasonal hou fields, and time-period almanac entries.

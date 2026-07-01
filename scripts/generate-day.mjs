@@ -12,7 +12,7 @@ const require = createRequire(import.meta.url);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, "..");
 
-const SCHEMA_VERSION = "1.1.0";
+const SCHEMA_VERSION = "1.2.0";
 const DEFAULT_TIME_ZONE = process.env.CALENDAR_TZ || "Asia/Taipei";
 const SOLAR_TERM_KEY_NAMES = {
   LI_CHUN: "立春",
@@ -199,6 +199,15 @@ function serializeNineStar(star) {
   });
 }
 
+function serializeNameIndex(value) {
+  if (!value) return null;
+  return toTraditional({
+    name: call(value, "getName", call(value, "toString", null)),
+    index: call(value, "getIndex"),
+    fullText: call(value, "toFullString", call(value, "toString", null))
+  });
+}
+
 function serializeTimes(lunar) {
   const times = call(lunar, "getTimes", []);
   if (!Array.isArray(times)) return [];
@@ -375,6 +384,11 @@ function serializeCalendarDay({ year, month, day, date, timeZone }) {
       clashZodiac: call(lunar, "getDayChongShengXiao"),
       clashDescription: call(lunar, "getDayChongDesc"),
       sha: call(lunar, "getDaySha"),
+      threeFu: serializeNameIndex(call(lunar, "getFu")),
+      jianChuTwelveOfficer: {
+        label: "建除十二神",
+        name: call(lunar, "getZhiXing")
+      },
       pengZu: {
         heavenlyStem: call(lunar, "getPengZuGan"),
         earthlyBranch: call(lunar, "getPengZuZhi")
