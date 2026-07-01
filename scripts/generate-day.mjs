@@ -54,7 +54,8 @@ function parseArgs(argv) {
 
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
-    if (arg === "--date") args.date = argv[++i];
+    if (arg === "--") continue;
+    else if (arg === "--date") args.date = argv[++i];
     else if (arg === "--out") args.out = argv[++i];
     else if (arg === "--date-out-dir") args.dateOutDir = argv[++i];
     else if (arg === "--timezone" || arg === "--time-zone") args.timeZone = argv[++i];
