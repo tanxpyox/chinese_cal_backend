@@ -12,7 +12,7 @@ The generator uses:
 ## Files
 
 - `data/today.json` is the stable latest-day URL target.
-- `data/days/YYYY-MM-DD.json` stores dated snapshots.
+- `data/days/YYYY-MM-DD.json` stores dated snapshots. Each generation writes the selected day plus one day before and one day after for compatibility with clients near date boundaries.
 - `scripts/generate-day.mjs` generates the JSON locally or in GitHub Actions.
 - `scripts/serve-data.mjs` serves the committed JSON locally.
 - `.github/workflows/publish-calendar.yml` regenerates and commits the JSON every day.
@@ -50,6 +50,8 @@ Generate a specific Gregorian date:
 ```sh
 pnpm run generate -- --date 2026-06-30 --out data/today.json --date-out-dir data/days
 ```
+
+When `--date-out-dir` is provided, the generator writes dated snapshots for the selected date, the previous date, and the next date. Existing dated snapshots are skipped rather than regenerated.
 
 Serve the committed JSON locally:
 

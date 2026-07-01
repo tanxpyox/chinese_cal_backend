@@ -79,7 +79,7 @@ Usage:
 Options:
   --date YYYY-MM-DD       Gregorian date to generate. Defaults to today in CALENDAR_TZ.
   --out FILE              Write JSON to FILE. Defaults to stdout.
-  --date-out-dir DIR      Also write DIR/YYYY-MM-DD.json.
+  --date-out-dir DIR      Also write DIR/YYYY-MM-DD.json for the selected date, previous day, and next day.
   --timezone TZ           IANA timezone for "today". Defaults to CALENDAR_TZ or Asia/Taipei.
   --compact               Write compact JSON.
 `);
@@ -108,6 +108,20 @@ function parseDate(dateArg, timeZone) {
     year: Number(y),
     month: Number(m),
     day: Number(d)
+  };
+}
+
+function offsetDateParts(dateParts, offsetDays) {
+  const utcDate = new Date(Date.UTC(dateParts.year, dateParts.month - 1, dateParts.day + offsetDays));
+  const year = utcDate.getUTCFullYear();
+  const month = utcDate.getUTCMonth() + 1;
+  const day = utcDate.getUTCDate();
+
+  return {
+    date: `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`,
+    year,
+    month,
+    day
   };
 }
 
@@ -436,15 +450,29 @@ function main() {
 
   if (args.out) {
     const written = writeJson(args.out, calendarDay, args.pretty);
-    console.error(`Wrote ${path.relative(repoRoot, written)}`);
+    console.warn(`Wrote ${path.relative(repoRoot, written)}`);
   } else {
     process.stdout.write(`${JSON.stringify(calendarDay, null, args.pretty ? 2 : 0)}\n`);
   }
 
   if (args.dateOutDir) {
-    const datedFile = path.join(args.dateOutDir, `${dateParts.date}.json`);
-    const written = writeJson(datedFile, calendarDay, args.pretty);
-    console.error(`Wrote ${path.relative(repoRoot, written)}`);
+    for (const offsetDays of [-1, 0, 1]) {
+      const datedParts = offsetDateParts(dateParts, offsetDays);
+      const datedFile = path.join(args.dateOutDir, `${datedParts.date}.json`);
+      const absoluteDatedFile = path.resolve(repoRoot, datedFile);
+
+      if (fs.existsSync(absoluteDatedFile)) {
+        console.warn(`Skipped ${path.relative(repoRoot, absoluteDatedFile)}; already exists`);
+        continue;
+      }
+
+      const datedCalendarDay =
+        offsetDays === 0
+          ? calendarDay
+          : serializeCalendarDay({ ...datedParts, timeZone: args.timeZone });
+      const written = writeJson(datedFile, datedCalendarDay, args.pretty);
+      console.warn(`Wrote ${path.relative(repoRoot, written)}`);
+    }
   }
 }
 
