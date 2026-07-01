@@ -1,25 +1,25 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-07-01T11:23:40.393Z",
+  "generatedAt": "2026-07-01T11:23:40.427Z",
   "timeZone": "Asia/Taipei",
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "source": {
     "lunarJavascript": "1.7.7",
     "openccJs": "1.3.2",
     "conversion": "OpenCC cn -> tw"
   },
   "calendarCard": {
-    "title": "農曆五月廿一",
+    "title": "農曆五月廿二",
     "lunarDate": {
       "month": "五月",
-      "day": "廿一",
-      "text": "五月廿一"
+      "day": "廿二",
+      "text": "五月廿二"
     },
     "sideColumn": {
       "year": "丙午馬年",
       "month": "甲午月",
-      "day": "庚辰日",
-      "weekday": "星期日"
+      "day": "辛巳日",
+      "weekday": "星期一"
     },
     "fiveElements": {
       "label": "五行",
@@ -27,29 +27,29 @@
     },
     "clashAndSha": {
       "label": "沖煞",
-      "text": "沖(甲戌)狗 煞南",
-      "clash": "(甲戌)狗",
-      "sha": "南"
+      "text": "沖(乙亥)豬 煞東",
+      "clash": "(乙亥)豬",
+      "sha": "東"
     },
     "pengZu": {
       "label": "彭祖",
-      "heavenlyStem": "庚不經絡織機虛張",
-      "earthlyBranch": "辰不哭泣必主重喪",
+      "heavenlyStem": "辛不合醬主人不嘗",
+      "earthlyBranch": "巳不遠行財物伏藏",
       "lines": [
-        "庚不經絡織機虛張",
-        "辰不哭泣必主重喪"
+        "辛不合醬主人不嘗",
+        "巳不遠行財物伏藏"
       ]
     },
     "directionGods": [
       {
         "label": "喜神",
-        "palace": "乾",
-        "direction": "西北"
+        "palace": "坤",
+        "direction": "西南"
       },
       {
         "label": "福神",
-        "palace": "坤",
-        "direction": "西南"
+        "palace": "乾",
+        "direction": "西北"
       },
       {
         "label": "財神",
@@ -61,31 +61,32 @@
       "auspicious": {
         "label": "宜",
         "items": [
-          "祭祀",
-          "祈福",
-          "求嗣",
-          "齋醮",
-          "安香",
-          "解除",
+          "嫁娶",
+          "冠笄",
+          "修造",
+          "動土",
+          "作灶",
           "移徙",
           "入宅",
-          "會親友",
-          "求醫",
-          "治病",
-          "動土",
-          "破土",
-          "開生墳",
-          "合壽木"
+          "補垣",
+          "塞穴",
+          "納畜",
+          "牧養",
+          "架馬",
+          "起基",
+          "定磉",
+          "開池",
+          "造船"
         ]
       },
       "inauspicious": {
         "label": "忌",
         "items": [
-          "合帳",
-          "上樑",
-          "經絡",
-          "安葬",
-          "入殮"
+          "祈福",
+          "開光",
+          "掘井",
+          "開市",
+          "安葬"
         ]
       }
     },
@@ -93,19 +94,19 @@
       "auspicious": {
         "label": "吉神",
         "items": [
+          "月德合",
           "天恩",
-          "時德",
-          "時陽",
-          "生氣",
-          "要安"
+          "王日",
+          "玉宇"
         ]
       },
       "inauspicious": {
         "label": "凶神",
         "items": [
-          "五虛",
-          "九空",
-          "天牢"
+          "遊禍",
+          "血支",
+          "重日",
+          "元武"
         ]
       }
     }
@@ -113,24 +114,27 @@
   "gregorian": {
     "year": 2026,
     "month": 7,
-    "day": 5,
-    "isoDate": "2026-07-05",
-    "weekdayIndex": 0,
-    "weekday": "日",
+    "day": 6,
+    "isoDate": "2026-07-06",
+    "weekdayIndex": 1,
+    "weekday": "一",
     "constellation": "巨蟹",
     "festivals": [],
-    "otherFestivals": []
+    "otherFestivals": [
+      "國際接吻日",
+      "朱德逝世紀念日"
+    ]
   },
   "lunar": {
     "year": 2026,
     "month": 5,
-    "day": 21,
+    "day": 22,
     "isLeapMonth": false,
     "yearText": "二〇二六",
     "monthText": "五",
-    "dayText": "廿一",
-    "dateText": "二〇二六年五月廿一",
-    "fullText": "二〇二六年五月廿一 丙午(馬)年 甲午(馬)月 庚辰(龍)日 子(鼠)時 納音[天河水 沙中金 白蠟金 澗下水] 星期日 北方玄武 星宿[虛日鼠](兇) 彭祖百忌[庚不經絡織機虛張 辰不哭泣必主重喪] 喜神方位[乾](西北) 陽貴神方位[離](正南) 陰貴神方位[艮](東北) 福神方位[坤](西南) 財神方位[震](正東) 衝[(甲戌)狗] 煞[南]",
+    "dayText": "廿二",
+    "dateText": "二〇二六年五月廿二",
+    "fullText": "二〇二六年五月廿二 丙午(馬)年 甲午(馬)月 辛巳(蛇)日 子(鼠)時 納音[天河水 沙中金 白蠟金 霹靂火] 星期一 北方玄武 星宿[危月燕](兇) 彭祖百忌[辛不合醬主人不嘗 巳不遠行財物伏藏] 喜神方位[坤](西南) 陽貴神方位[艮](東北) 陰貴神方位[離](正南) 福神方位[乾](西北) 財神方位[震](正東) 衝[(乙亥)豬] 煞[東]",
     "festivals": [],
     "otherFestivals": []
   },
@@ -241,13 +245,13 @@
     "yearExact": "丙午",
     "month": "甲午",
     "monthExact": "甲午",
-    "day": "庚辰",
-    "dayExact": "庚辰"
+    "day": "辛巳",
+    "dayExact": "辛巳"
   },
   "zodiac": {
     "year": "馬",
     "month": "馬",
-    "day": "龍"
+    "day": "蛇"
   },
   "naYin": {
     "year": "天河水",
@@ -256,54 +260,55 @@
   },
   "almanac": {
     "auspicious": [
-      "祭祀",
-      "祈福",
-      "求嗣",
-      "齋醮",
-      "安香",
-      "解除",
+      "嫁娶",
+      "冠笄",
+      "修造",
+      "動土",
+      "作灶",
       "移徙",
       "入宅",
-      "會親友",
-      "求醫",
-      "治病",
-      "動土",
-      "破土",
-      "開生墳",
-      "合壽木"
+      "補垣",
+      "塞穴",
+      "納畜",
+      "牧養",
+      "架馬",
+      "起基",
+      "定磉",
+      "開池",
+      "造船"
     ],
     "inauspicious": [
-      "合帳",
-      "上樑",
-      "經絡",
-      "安葬",
-      "入殮"
+      "祈福",
+      "開光",
+      "掘井",
+      "開市",
+      "安葬"
     ],
     "auspiciousDeities": [
+      "月德合",
       "天恩",
-      "時德",
-      "時陽",
-      "生氣",
-      "要安"
+      "王日",
+      "玉宇"
     ],
     "inauspiciousDeities": [
-      "五虛",
-      "九空",
-      "天牢"
+      "遊禍",
+      "血支",
+      "重日",
+      "元武"
     ],
-    "clash": "戌",
-    "clashHeavenlyStem": "甲",
-    "clashEarthlyBranch": "戌",
-    "clashHiddenHeavenlyStem": "乙",
-    "clashZodiac": "狗",
-    "clashDescription": "(甲戌)狗",
-    "sha": "南",
+    "clash": "亥",
+    "clashHeavenlyStem": "乙",
+    "clashEarthlyBranch": "亥",
+    "clashHiddenHeavenlyStem": "甲",
+    "clashZodiac": "豬",
+    "clashDescription": "(乙亥)豬",
+    "sha": "東",
     "pengZu": {
-      "heavenlyStem": "庚不經絡織機虛張",
-      "earthlyBranch": "辰不哭泣必主重喪"
+      "heavenlyStem": "辛不合醬主人不嘗",
+      "earthlyBranch": "巳不遠行財物伏藏"
     },
     "deity": {
-      "name": "天牢",
+      "name": "玄武",
       "type": "黑道",
       "luck": "兇"
     }
@@ -311,13 +316,13 @@
   "directions": {
     "joy": {
       "label": "喜神",
-      "palace": "乾",
-      "direction": "西北"
+      "palace": "坤",
+      "direction": "西南"
     },
     "fortune": {
       "label": "福神",
-      "palace": "坤",
-      "direction": "西南"
+      "palace": "乾",
+      "direction": "西北"
     },
     "wealth": {
       "label": "財神",
@@ -326,13 +331,13 @@
     },
     "yangNoble": {
       "label": "陽貴神",
-      "palace": "離",
-      "direction": "正南"
+      "palace": "艮",
+      "direction": "東北"
     },
     "yinNoble": {
       "label": "陰貴神",
-      "palace": "艮",
-      "direction": "東北"
+      "palace": "離",
+      "direction": "正南"
     },
     "taiSui": {
       "label": "太歲",
@@ -341,427 +346,36 @@
     },
     "fetalGod": {
       "label": "胎神",
-      "position": "碓磨棲 外正西"
+      "position": "廚灶床 外正西"
     }
   },
   "stars": {
     "nineStar": {
-      "number": "二",
-      "color": "黑",
-      "element": "土",
+      "number": "一",
+      "color": "白",
+      "element": "水",
       "name": null,
-      "taiYiName": "攝提",
+      "taiYiName": "太乙",
       "luck": null,
       "song": null,
-      "fullText": "二黑土 坤(西南) 天璇 玄空[巨門 兇] 奇門[天芮 大凶 死門 陰] 太乙[攝提 凶神]"
+      "fullText": "一白水 坎(正北) 天樞 玄空[貪狼 吉] 奇門[天蓬 大凶 休門 陽] 太乙[太乙 吉神]"
     },
     "mansion": {
-      "name": "虛",
+      "name": "危",
       "luck": "兇",
-      "song": "虛星造作主災殃，男女孤眠不一雙，內亂風聲無禮節，兒孫媳婦伴人床，開門放水遭災禍，虎咬蛇傷又卒亡，三三五五連年病，家破人亡不可當。",
-      "animal": "鼠",
+      "song": "危星不可造高樓，自遭刑吊見血光，三年孩子遭水厄，後生出外永不還，埋葬若還逢此日，週年百日取高堂，三年兩載一悲傷，開門放水到官堂。",
+      "animal": "燕",
       "palace": "北",
       "beast": "玄武",
-      "zheng": "日"
+      "zheng": "月"
     }
   },
   "season": {
-    "phase": "漸虧凸",
+    "phase": "下弦",
     "hou": "夏至 三候",
     "wuHou": "半夏生"
   },
   "times": [
-    {
-      "label": "丙子",
-      "fullText": null,
-      "ganZhi": "丙子",
-      "heavenlyStem": "丙",
-      "earthlyBranch": "子",
-      "zodiac": "鼠",
-      "naYin": "澗下水",
-      "clash": "午",
-      "clashDescription": "(庚午)馬",
-      "sha": "南",
-      "auspicious": [
-        "祈福",
-        "求嗣",
-        "訂婚",
-        "嫁娶",
-        "求財",
-        "開市",
-        "交易",
-        "安床"
-      ],
-      "inauspicious": [
-        "赴任",
-        "修造",
-        "移徙",
-        "出行",
-        "詞訟",
-        "上樑",
-        "蓋屋",
-        "入殮"
-      ],
-      "deity": {
-        "name": "天牢",
-        "type": "黑道",
-        "luck": "兇"
-      }
-    },
-    {
-      "label": "丁丑",
-      "fullText": null,
-      "ganZhi": "丁丑",
-      "heavenlyStem": "丁",
-      "earthlyBranch": "醜",
-      "zodiac": "牛",
-      "naYin": "澗下水",
-      "clash": "未",
-      "clashDescription": "(辛未)羊",
-      "sha": "東",
-      "auspicious": [
-        "祭祀",
-        "祈福",
-        "酬神",
-        "求財",
-        "見貴",
-        "訂婚",
-        "嫁娶",
-        "安葬"
-      ],
-      "inauspicious": [
-        "赴任",
-        "出行",
-        "修造",
-        "動土"
-      ],
-      "deity": {
-        "name": "玄武",
-        "type": "黑道",
-        "luck": "兇"
-      }
-    },
-    {
-      "label": "戊寅",
-      "fullText": null,
-      "ganZhi": "戊寅",
-      "heavenlyStem": "戊",
-      "earthlyBranch": "寅",
-      "zodiac": "虎",
-      "naYin": "城頭土",
-      "clash": "申",
-      "clashDescription": "(壬申)猴",
-      "sha": "北",
-      "auspicious": [
-        "訂婚",
-        "嫁娶",
-        "開市",
-        "交易",
-        "安床",
-        "作灶",
-        "祭祀"
-      ],
-      "inauspicious": [
-        "祈福",
-        "求嗣",
-        "赴任",
-        "出行",
-        "求財"
-      ],
-      "deity": {
-        "name": "司命",
-        "type": "黃道",
-        "luck": "吉"
-      }
-    },
-    {
-      "label": "己卯",
-      "fullText": null,
-      "ganZhi": "己卯",
-      "heavenlyStem": "己",
-      "earthlyBranch": "卯",
-      "zodiac": "兔",
-      "naYin": "城頭土",
-      "clash": "酉",
-      "clashDescription": "(癸酉)雞",
-      "sha": "西",
-      "auspicious": [
-        "求嗣",
-        "訂婚",
-        "嫁娶",
-        "求財",
-        "開市",
-        "交易",
-        "安床"
-      ],
-      "inauspicious": [
-        "祭祀",
-        "祈福",
-        "齋醮",
-        "酬神",
-        "赴任",
-        "出行",
-        "修造"
-      ],
-      "deity": {
-        "name": "勾陳",
-        "type": "黑道",
-        "luck": "兇"
-      }
-    },
-    {
-      "label": "庚辰",
-      "fullText": null,
-      "ganZhi": "庚辰",
-      "heavenlyStem": "庚",
-      "earthlyBranch": "辰",
-      "zodiac": "龍",
-      "naYin": "白蠟金",
-      "clash": "戌",
-      "clashDescription": "(甲戌)狗",
-      "sha": "南",
-      "auspicious": [
-        "無"
-      ],
-      "inauspicious": [
-        "諸事不宜"
-      ],
-      "deity": {
-        "name": "青龍",
-        "type": "黃道",
-        "luck": "吉"
-      }
-    },
-    {
-      "label": "辛巳",
-      "fullText": null,
-      "ganZhi": "辛巳",
-      "heavenlyStem": "辛",
-      "earthlyBranch": "巳",
-      "zodiac": "蛇",
-      "naYin": "白蠟金",
-      "clash": "亥",
-      "clashDescription": "(乙亥)豬",
-      "sha": "東",
-      "auspicious": [
-        "求嗣",
-        "嫁娶",
-        "移徙",
-        "入宅",
-        "開市",
-        "交易",
-        "修造",
-        "安葬",
-        "祭祀",
-        "祈福",
-        "齋醮",
-        "酬神"
-      ],
-      "inauspicious": [
-        "無"
-      ],
-      "deity": {
-        "name": "明堂",
-        "type": "黃道",
-        "luck": "吉"
-      }
-    },
-    {
-      "label": "壬午",
-      "fullText": null,
-      "ganZhi": "壬午",
-      "heavenlyStem": "壬",
-      "earthlyBranch": "午",
-      "zodiac": "馬",
-      "naYin": "楊柳木",
-      "clash": "子",
-      "clashDescription": "(丙子)鼠",
-      "sha": "北",
-      "auspicious": [
-        "求財",
-        "見貴",
-        "酬神"
-      ],
-      "inauspicious": [
-        "祭祀",
-        "祈福",
-        "齋醮",
-        "開光",
-        "赴任",
-        "出行"
-      ],
-      "deity": {
-        "name": "天刑",
-        "type": "黑道",
-        "luck": "兇"
-      }
-    },
-    {
-      "label": "癸未",
-      "fullText": null,
-      "ganZhi": "癸未",
-      "heavenlyStem": "癸",
-      "earthlyBranch": "未",
-      "zodiac": "羊",
-      "naYin": "楊柳木",
-      "clash": "醜",
-      "clashDescription": "(丁丑)牛",
-      "sha": "西",
-      "auspicious": [
-        "酬神",
-        "求財",
-        "見貴",
-        "訂婚",
-        "嫁娶",
-        "修造",
-        "安葬"
-      ],
-      "inauspicious": [
-        "赴任",
-        "出行",
-        "祭祀",
-        "祈福",
-        "齋醮",
-        "開光"
-      ],
-      "deity": {
-        "name": "朱雀",
-        "type": "黑道",
-        "luck": "兇"
-      }
-    },
-    {
-      "label": "甲申",
-      "fullText": null,
-      "ganZhi": "甲申",
-      "heavenlyStem": "甲",
-      "earthlyBranch": "申",
-      "zodiac": "猴",
-      "naYin": "泉中水",
-      "clash": "寅",
-      "clashDescription": "(戊寅)虎",
-      "sha": "南",
-      "auspicious": [
-        "祈福",
-        "訂婚",
-        "嫁娶",
-        "開市",
-        "赴任",
-        "出行",
-        "求財",
-        "見貴"
-      ],
-      "inauspicious": [
-        "開光",
-        "修造",
-        "安葬"
-      ],
-      "deity": {
-        "name": "金匱",
-        "type": "黃道",
-        "luck": "吉"
-      }
-    },
-    {
-      "label": "乙酉",
-      "fullText": null,
-      "ganZhi": "乙酉",
-      "heavenlyStem": "乙",
-      "earthlyBranch": "酉",
-      "zodiac": "雞",
-      "naYin": "泉中水",
-      "clash": "卯",
-      "clashDescription": "(己卯)兔",
-      "sha": "東",
-      "auspicious": [
-        "修造",
-        "作灶",
-        "求嗣",
-        "嫁娶",
-        "移徙",
-        "入宅",
-        "開市",
-        "交易"
-      ],
-      "inauspicious": [
-        "祭祀",
-        "祈福",
-        "齋醮",
-        "酬神"
-      ],
-      "deity": {
-        "name": "天德",
-        "type": "黃道",
-        "luck": "吉"
-      }
-    },
-    {
-      "label": "丙戌",
-      "fullText": null,
-      "ganZhi": "丙戌",
-      "heavenlyStem": "丙",
-      "earthlyBranch": "戌",
-      "zodiac": "狗",
-      "naYin": "屋上土",
-      "clash": "辰",
-      "clashDescription": "(庚辰)龍",
-      "sha": "北",
-      "auspicious": [
-        "祈福",
-        "求嗣",
-        "訂婚",
-        "嫁娶",
-        "出行",
-        "求財",
-        "開市",
-        "交易",
-        "安床",
-        "祭祀"
-      ],
-      "inauspicious": [
-        "上樑",
-        "蓋屋",
-        "入殮"
-      ],
-      "deity": {
-        "name": "白虎",
-        "type": "黑道",
-        "luck": "兇"
-      }
-    },
-    {
-      "label": "丁亥",
-      "fullText": null,
-      "ganZhi": "丁亥",
-      "heavenlyStem": "丁",
-      "earthlyBranch": "亥",
-      "zodiac": "豬",
-      "naYin": "屋上土",
-      "clash": "巳",
-      "clashDescription": "(辛巳)蛇",
-      "sha": "西",
-      "auspicious": [
-        "修造",
-        "入宅",
-        "安葬",
-        "赴任",
-        "出行",
-        "見貴",
-        "求財",
-        "訂婚",
-        "嫁娶",
-        "進人口",
-        "移徙"
-      ],
-      "inauspicious": [
-        "無"
-      ],
-      "deity": {
-        "name": "玉堂",
-        "type": "黃道",
-        "luck": "吉"
-      }
-    },
     {
       "label": "戊子",
       "fullText": null,
@@ -793,6 +407,399 @@
         "name": "白虎",
         "type": "黑道",
         "luck": "兇"
+      }
+    },
+    {
+      "label": "己丑",
+      "fullText": null,
+      "ganZhi": "己丑",
+      "heavenlyStem": "己",
+      "earthlyBranch": "醜",
+      "zodiac": "牛",
+      "naYin": "霹靂火",
+      "clash": "未",
+      "clashDescription": "(癸未)羊",
+      "sha": "東",
+      "auspicious": [
+        "修造",
+        "蓋屋",
+        "移徙",
+        "安床",
+        "入宅",
+        "開市",
+        "開倉",
+        "赴任",
+        "見貴",
+        "求財",
+        "出行",
+        "嫁娶",
+        "進人口"
+      ],
+      "inauspicious": [
+        "無"
+      ],
+      "deity": {
+        "name": "玉堂",
+        "type": "黃道",
+        "luck": "吉"
+      }
+    },
+    {
+      "label": "庚寅",
+      "fullText": null,
+      "ganZhi": "庚寅",
+      "heavenlyStem": "庚",
+      "earthlyBranch": "寅",
+      "zodiac": "虎",
+      "naYin": "松柏木",
+      "clash": "申",
+      "clashDescription": "(甲申)猴",
+      "sha": "北",
+      "auspicious": [
+        "祈福",
+        "求嗣",
+        "訂婚",
+        "嫁娶",
+        "求財",
+        "開市",
+        "交易",
+        "安床",
+        "祭祀"
+      ],
+      "inauspicious": [
+        "赴任",
+        "修造",
+        "移徙",
+        "出行",
+        "詞訟"
+      ],
+      "deity": {
+        "name": "天牢",
+        "type": "黑道",
+        "luck": "兇"
+      }
+    },
+    {
+      "label": "辛卯",
+      "fullText": null,
+      "ganZhi": "辛卯",
+      "heavenlyStem": "辛",
+      "earthlyBranch": "卯",
+      "zodiac": "兔",
+      "naYin": "松柏木",
+      "clash": "酉",
+      "clashDescription": "(乙酉)雞",
+      "sha": "西",
+      "auspicious": [
+        "求嗣",
+        "訂婚",
+        "嫁娶",
+        "求財",
+        "開市",
+        "交易",
+        "安床"
+      ],
+      "inauspicious": [
+        "祭祀",
+        "祈福",
+        "齋醮",
+        "酬神",
+        "赴任",
+        "出行",
+        "修造",
+        "動土"
+      ],
+      "deity": {
+        "name": "玄武",
+        "type": "黑道",
+        "luck": "兇"
+      }
+    },
+    {
+      "label": "壬辰",
+      "fullText": null,
+      "ganZhi": "壬辰",
+      "heavenlyStem": "壬",
+      "earthlyBranch": "辰",
+      "zodiac": "龍",
+      "naYin": "長流水",
+      "clash": "戌",
+      "clashDescription": "(丙戌)狗",
+      "sha": "南",
+      "auspicious": [
+        "作灶",
+        "酬神",
+        "修造",
+        "見貴",
+        "求財",
+        "嫁娶",
+        "進人口",
+        "移徙",
+        "安葬"
+      ],
+      "inauspicious": [
+        "祭祀",
+        "祈福",
+        "齋醮",
+        "開光",
+        "赴任",
+        "出行"
+      ],
+      "deity": {
+        "name": "司命",
+        "type": "黃道",
+        "luck": "吉"
+      }
+    },
+    {
+      "label": "癸巳",
+      "fullText": null,
+      "ganZhi": "癸巳",
+      "heavenlyStem": "癸",
+      "earthlyBranch": "巳",
+      "zodiac": "蛇",
+      "naYin": "長流水",
+      "clash": "亥",
+      "clashDescription": "(丁亥)豬",
+      "sha": "東",
+      "auspicious": [
+        "無"
+      ],
+      "inauspicious": [
+        "諸事不宜"
+      ],
+      "deity": {
+        "name": "勾陳",
+        "type": "黑道",
+        "luck": "兇"
+      }
+    },
+    {
+      "label": "甲午",
+      "fullText": null,
+      "ganZhi": "甲午",
+      "heavenlyStem": "甲",
+      "earthlyBranch": "午",
+      "zodiac": "馬",
+      "naYin": "沙中金",
+      "clash": "子",
+      "clashDescription": "(戊子)鼠",
+      "sha": "北",
+      "auspicious": [
+        "赴任",
+        "出行",
+        "求財",
+        "見貴",
+        "祭祀",
+        "祈福",
+        "酬神"
+      ],
+      "inauspicious": [
+        "無"
+      ],
+      "deity": {
+        "name": "青龍",
+        "type": "黃道",
+        "luck": "吉"
+      }
+    },
+    {
+      "label": "乙未",
+      "fullText": null,
+      "ganZhi": "乙未",
+      "heavenlyStem": "乙",
+      "earthlyBranch": "未",
+      "zodiac": "羊",
+      "naYin": "沙中金",
+      "clash": "醜",
+      "clashDescription": "(己丑)牛",
+      "sha": "西",
+      "auspicious": [
+        "祈福",
+        "求嗣",
+        "訂婚",
+        "嫁娶",
+        "出行",
+        "求財",
+        "開市",
+        "交易",
+        "安床",
+        "祭祀",
+        "修造",
+        "蓋屋",
+        "移徙",
+        "作灶"
+      ],
+      "inauspicious": [
+        "無"
+      ],
+      "deity": {
+        "name": "明堂",
+        "type": "黃道",
+        "luck": "吉"
+      }
+    },
+    {
+      "label": "丙申",
+      "fullText": null,
+      "ganZhi": "丙申",
+      "heavenlyStem": "丙",
+      "earthlyBranch": "申",
+      "zodiac": "猴",
+      "naYin": "山下火",
+      "clash": "寅",
+      "clashDescription": "(庚寅)虎",
+      "sha": "南",
+      "auspicious": [
+        "祈福",
+        "求嗣",
+        "訂婚",
+        "嫁娶",
+        "出行",
+        "求財",
+        "開市",
+        "交易",
+        "安床"
+      ],
+      "inauspicious": [
+        "上樑",
+        "蓋屋",
+        "入殮",
+        "赴任",
+        "詞訟"
+      ],
+      "deity": {
+        "name": "天刑",
+        "type": "黑道",
+        "luck": "兇"
+      }
+    },
+    {
+      "label": "丁酉",
+      "fullText": null,
+      "ganZhi": "丁酉",
+      "heavenlyStem": "丁",
+      "earthlyBranch": "酉",
+      "zodiac": "雞",
+      "naYin": "山下火",
+      "clash": "卯",
+      "clashDescription": "(辛卯)兔",
+      "sha": "東",
+      "auspicious": [
+        "求財",
+        "見貴",
+        "訂婚",
+        "嫁娶",
+        "入宅",
+        "開市",
+        "安葬",
+        "修造"
+      ],
+      "inauspicious": [
+        "赴任",
+        "出行"
+      ],
+      "deity": {
+        "name": "朱雀",
+        "type": "黑道",
+        "luck": "兇"
+      }
+    },
+    {
+      "label": "戊戌",
+      "fullText": null,
+      "ganZhi": "戊戌",
+      "heavenlyStem": "戊",
+      "earthlyBranch": "戌",
+      "zodiac": "狗",
+      "naYin": "平地木",
+      "clash": "辰",
+      "clashDescription": "(壬辰)龍",
+      "sha": "北",
+      "auspicious": [
+        "訂婚",
+        "嫁娶",
+        "開市",
+        "安葬"
+      ],
+      "inauspicious": [
+        "乘船",
+        "祈福",
+        "求嗣",
+        "祭祀"
+      ],
+      "deity": {
+        "name": "金匱",
+        "type": "黃道",
+        "luck": "吉"
+      }
+    },
+    {
+      "label": "己亥",
+      "fullText": null,
+      "ganZhi": "己亥",
+      "heavenlyStem": "己",
+      "earthlyBranch": "亥",
+      "zodiac": "豬",
+      "naYin": "平地木",
+      "clash": "巳",
+      "clashDescription": "(癸巳)蛇",
+      "sha": "西",
+      "auspicious": [
+        "祭祀",
+        "祈福",
+        "齋醮",
+        "酬神",
+        "作灶"
+      ],
+      "inauspicious": [
+        "造橋",
+        "乘船",
+        "開光",
+        "修造",
+        "安葬"
+      ],
+      "deity": {
+        "name": "天德",
+        "type": "黃道",
+        "luck": "吉"
+      }
+    },
+    {
+      "label": "庚子",
+      "fullText": null,
+      "ganZhi": "庚子",
+      "heavenlyStem": "庚",
+      "earthlyBranch": "子",
+      "zodiac": "鼠",
+      "naYin": "壁上土",
+      "clash": "午",
+      "clashDescription": "(甲午)馬",
+      "sha": "南",
+      "auspicious": [
+        "祈福",
+        "求嗣",
+        "訂婚",
+        "嫁娶",
+        "求財",
+        "開市",
+        "交易",
+        "安床"
+      ],
+      "inauspicious": [
+        "上樑",
+        "蓋屋",
+        "入殮",
+        "赴任",
+        "修造",
+        "移徙",
+        "出行",
+        "詞訟"
+      ],
+      "deity": {
+        "name": "金匱",
+        "type": "黃道",
+        "luck": "吉"
       }
     }
   ]
